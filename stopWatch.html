@@ -1,8 +1,34 @@
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solvative - Stop Watch</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/stopWatch.css">
+    <script type="text/javascript" src="assets/js/stopWatch.js"></script>
   </head>
   <body>
-    
+    <div class="watchContainer">
+      <section class="watchParts hourPart">
+        <label class="counterHr dropShadow">00</label>
+        <sub>hrs</sub>
+      </section>
+      <span>:</span>
+       <section class="watchParts minPart">
+        <label class="counterMin dropShadow">00</label>
+        <sub>min</sub>
+      </section>
+      <span>:</span>
+       <section class="watchParts secPArt">
+        <label class="counterSec dropShadow">00</label>
+        <sub>sec</sub>
+      </section>
+    </div>
+    <ul class="buttonContainer">    	
+    	<li  class="hiddenIcon"><i class="icon-controls icon-stop-solid"></i></li>
+    	<li><i class="icon-controls icon-play-solid"></i></li>
+    	<li class="hiddenIcon"><i class="icon-controls icon-pause-solid"></i></li>
+    	<li  class="hiddenIcon"><i class="icon-controls icon-rotate-left-solid"></i></li>
+    </ul>
   </body>
 </html>
