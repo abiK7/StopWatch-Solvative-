@@ -1,0 +1,86 @@
+html *{
+	list-style-type: none;
+	text-decoration: none;
+}
+html,body{
+	margin:0;
+}
+@font-face{
+	font-family: "Roboto-Condensed";
+	src:url("../fonts/RobotoCondensed-VariableFont_wght.ttf");
+	font-weight: normal;
+}
+@font-face{
+	font-family: "stopWatchControls";
+	src:url("../images/font/stopWatchCtrls.ttf");
+	font-weight: normal;
+}
+html {
+    background:#000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+.watchContainer {
+     position: fixed;
+    top: 35vh;
+    width: 90%;
+    left: calc(5% - 20px);
+    background: #141414;
+    color:#fff;
+    display: flex;
+    font-size: 20vh;
+    justify-content: space-around;
+    padding: 20px;
+    border-radius: 20px;
+}
+.watchParts{
+	position:relative;
+	font-family: "Roboto-Condensed";
+}
+.watchParts sub{
+	font-size: 5vh;
+	position: absolute;
+	bottom: -20px;
+	left: 35%;
+}
+.dropShadow{
+    filter: drop-shadow(1px 1px 3px #fff);;
+}
+.icon-controls{
+	font-family: stopWatchControls;
+	font-style:normal;
+	color: #000;
+	filter: drop-shadow(2px 4px 2px #444);
+	cursor: pointer;
+}
+.buttonContainer{
+	background:#f9ca03;
+	width: 200px;
+	position: fixed;
+	left: calc(50% - 100px);
+	top: 70vh;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 5px;
+	padding: 10px 0;
+    font-size: 20px;
+}
+.icon-rotate-left-solid:before {
+  content: "\e901";
+}
+.icon-stop-solid:before {
+  content: "\e902";
+}
+.icon-pause-solid:before {
+  content: "\e903";
+}
+.icon-play-solid:before {
+  content: "\e900";
+}
+.hiddenIcon{
+	display: none;
+}
+.buttonContainer,.buttonContainer * {
+    transition: 0.375s ease all;
+}
