@@ -7,7 +7,7 @@ html,body{
 }
 @font-face{
 	font-family: "Roboto-Condensed";
-	src:url("../fonts/RobotoCondensed-VariableFont_wght.ttf");
+	src:url("../font/RobotoCondensed-VariableFont_wght.ttf");
 	font-weight: normal;
 }
 @font-face{
