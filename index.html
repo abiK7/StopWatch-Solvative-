@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Solvative - Stop Watch</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/stopWatch.css">
+    <script type="text/javascript" src="assets/js/stopWatch.js"></script>
+  </head>
+  <body onload="fetchValues()">
+    <div class="watchContainer">
+      <section class="watchParts hourPart">
+        <label class="counterHr dropShadow">00</label>
+        <sub>hrs</sub>
+      </section>
+      <span>:</span>
+       <section class="watchParts minPart">
+        <label class="counterMin dropShadow">00</label>
+        <sub>min</sub>
+      </section>
+      <span>:</span>
+       <section class="watchParts secPart">
+        <label class="counterSec dropShadow">00</label>
+        <sub>sec</sub>
+      </section>
+      <span>:</span>
+       <section class="watchParts msecPart">
+        <label class="counterMSec dropShadow">00</label>
+        <sub>ms</sub>
+      </section>
+    </div>
+    <ul class="buttonContainer">    	
+    	<li  class="hiddenIcon"><i onclick="stopTimer()" id="stopTimer" class="icon-controls icon-stop-solid"></i></li>
+    	<li><i onclick="startTimer()" id="startTimer" data-isPaused="false" class="icon-controls icon-play-solid"></i></li>
+    	<li class="hiddenIcon"><i onclick="pauseTimer()" id="pauseTimer" class="icon-controls icon-pause-solid"></i></li>
+    	<li  class="hiddenIcon"><i onclick="resetTimer()" id="resetTimer" class="icon-controls icon-rotate-left-solid"></i></li>
+    </ul>
+  </body>
+</html>
